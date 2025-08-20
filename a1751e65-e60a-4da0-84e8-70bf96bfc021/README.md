@@ -1,14 +1,16 @@
 # S3 Bucket Terraform Configuration
 
-This directory contains Terraform configuration to create two S3 buckets: "working-iac-check" and "randamtest234" with best practices for security and management.
+This directory contains Terraform configuration to create S3 buckets: "working-iac-check", "randamtest234", "neeteshtest23432", and "test-backup-bucket" with best practices for security and management.
 
 ## Resources Created
 
 - S3 bucket with the name "working-iac-check"
 - S3 bucket with the name "randamtest234"
-- Bucket versioning enabled for both buckets
-- Server-side encryption with AES256 for both buckets
-- Public access blocking for enhanced security on both buckets
+- S3 bucket with the name "neeteshtest23432"
+- S3 bucket with the name "test-backup-bucket" (for backup storage)
+- Bucket versioning enabled for all buckets
+- Server-side encryption with AES256 for all buckets
+- Public access blocking for enhanced security on all buckets
 
 ## Usage
 
@@ -46,4 +48,12 @@ After applying, Terraform will output:
 - S3 bucket ARNs
 - S3 bucket regions
 
-Both buckets follow AWS best practices for security including encryption, versioning, and public access blocking.
+All buckets follow AWS best practices for security including encryption, versioning, and public access blocking.
+
+## Backup Bucket
+
+The "test-backup-bucket" is specifically configured for backup storage purposes with the same security measures as other buckets:
+- Server-side encryption
+- Versioning enabled
+- Public access blocking
+- Tagged with purpose = "Backup Storage"
