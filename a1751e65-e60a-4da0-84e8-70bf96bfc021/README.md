@@ -1,12 +1,13 @@
 # S3 Bucket Terraform Configuration
 
-This directory contains Terraform configuration to create S3 buckets: "working-iac-check", "randamtest234", and "neeteshtest23432" with best practices for security and management.
+This directory contains Terraform configuration to create S3 buckets: "working-iac-check", "randamtest234", "neeteshtest23432", and "iac-check-325rfe" with best practices for security and management.
 
 ## Resources Created
 
 - S3 bucket with the name "working-iac-check"
 - S3 bucket with the name "randamtest234"
 - S3 bucket with the name "neeteshtest23432"
+- S3 bucket with the name "iac-check-325rfe"
 - Bucket versioning enabled for all buckets
 - Server-side encryption with AES256 for all buckets
 - Public access blocking for enhanced security on all buckets
